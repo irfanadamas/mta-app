@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "947962252237",
+    "firebase_url": "https://traccs-mobile-time-attendance.firebaseio.com",
+    "project_id": "traccs-mobile-time-attendance",
+    "storage_bucket": "traccs-mobile-time-attendance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947962252237:android:657ebdb26180175d3f5284",
+        "android_client_info": {
+          "package_name": "adamas.traccs.mta_20_06"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "947962252237-eqp771uhn7iude5jovs811jk9sbmbefl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "adamas.traccs.mta_20_06",
+            "certificate_hash": "690fba5a719e8110531dc84d337ceb6309f5d411"
+          }
+        },
+        {
+          "client_id": "947962252237-3emroo752m5fh567n682g7qda5qrq8ji.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMaJgxITohj9w901ecV3cfoptFIfjFtvU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "947962252237-3emroo752m5fh567n682g7qda5qrq8ji.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

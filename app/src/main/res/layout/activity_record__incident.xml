@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/bg_default"
+    tools:context=".Record_Incident">
+
+    <TextView
+        android:id="@+id/txtRecipient"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@color/blue_header"
+        android:fontFamily="@font/roboto"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:lineSpacingExtra="8dp"
+        android:text="Recipient Involved:"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+
+            android:layout_weight="1"
+            android:background="@color/power_blue"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="vertical"
+            tools:layout_editor_absoluteY="8dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <Button
+                    android:id="@+id/btnExit"
+                    android:layout_width="96dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:height="60dp"
+                    android:background="@drawable/btn_blue_light"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="CANCEL"
+                    android:textColor="#fff"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnOK"
+                    app:layout_constraintTop_toBottomOf="@+id/txtOutCome" />
+
+                <Button
+                    android:id="@+id/btnOK"
+                    android:layout_width="96dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:height="60dp"
+                    android:background="@drawable/btn_blue_new"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="SAVE"
+                    android:textColor="#fff"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtOutCome" />
+
+                <CheckBox
+                    android:id="@+id/chkNoRecipientInvloved"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:buttonTint="@color/blue_206"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="No recipient involved"
+                    android:textColor="#000"
+                    android:textSize="14dp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtLine" />
+
+                <EditText
+                    android:id="@+id/txtIncidentSummary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:layout_below="@+id/lbl1incidentSmmary"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:autoText="true"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:elevation="2dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="top"
+                    android:inputType="textImeMultiLine|textMultiLine"
+                    android:paddingStart="15dp"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4"
+                    android:digits="@string/myAlphaNumericASCII"/>
+
+
+                <EditText
+                    android:id="@+id/txtRosterNote"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:layout_below="@+id/lbl1incidentSmmary"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:autoText="true"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:elevation="2dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="top"
+                    android:inputType="textImeMultiLine|textMultiLine"
+                    android:paddingStart="15dp"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5"
+                    android:digits="@string/myAlphaNumericASCII"/>
+
+
+                <EditText
+                    android:id="@+id/txtAction"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+
+                    android:background="@drawable/rounded_border_edittext"
+                    android:elevation="2dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="top"
+                    android:inputType="textImeMultiLine|textMultiLine"
+                    android:paddingStart="15dp"
+                    android:textSize="14dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAction_label"
+                    android:digits="@string/myAlphaNumericASCII"/>
+
+
+                <EditText
+                    android:id="@+id/txtOutCome"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:elevation="2dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:inputType="textImeMultiLine|textMultiLine"
+                    android:paddingStart="15dp"
+
+                    android:textSize="14dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtOutcome_label" />
+
+
+                <TextView
+                    android:id="@+id/txtLine"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="@drawable/border_bottom"
+                    app:layout_constraintBottom_toTopOf="@+id/chkNoRecipientInvloved"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinnerIncidentLocation"></TextView>
+
+                <TextView
+                    android:id="@+id/spinnerIncidentType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinner_border"
+                    android:drawableEnd="@drawable/dwon"
+
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:hint="Select an option"
+
+                    android:lineSpacingExtra="8sp"
+                    android:paddingStart="15dp"
+                    android:text=""
+                    android:textColor="#171313"
+                    android:textColorHint="#171313"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txttype" />
+                <!--    <Spinner
+                    android:id="@+id/spinnerIncidentType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/border2"
+                    android:entries="@array/incident_type"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="right"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txttype" />
+-->
+
+                <TextView
+                    android:id="@+id/spinnerIncidentSeverity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinner_border"
+                    android:drawableEnd="@drawable/dwon"
+                    android:fontFamily="@font/roboto_medium"
+
+                    android:gravity="center_vertical"
+                    android:hint="Select an option"
+                    android:lineSpacingExtra="8sp"
+
+                    android:paddingStart="15dp"
+                    android:text=""
+                    android:textColor="#171313"
+                    android:textColorHint="#171313"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSerivity" />
+                <!--   <Spinner
+                    android:id="@+id/spinnerIncidentSeverity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtSerivity"
+                    android:background="@drawable/border2"
+                    android:entries="@array/incident_severity"
+                    android:gravity="center_horizontal"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtSerivity" />-->
+
+                <TextView
+                    android:id="@+id/spinnerIncidentLocation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinner_border"
+                    android:drawableEnd="@drawable/dwon"
+                    android:fontFamily="@font/roboto_medium"
+
+                    android:gravity="center_vertical"
+                    android:hint="Select an option"
+                    android:lineSpacingExtra="8sp"
+
+                    android:paddingStart="15dp"
+                    android:text=""
+                    android:textColor="#171313"
+                    android:textColorHint="#171313"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtLocation" />
+                <!--  <Spinner
+                    android:id="@+id/spinnerIncidentLocation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtLocation"
+                    android:background="@drawable/border2"
+                    android:entries="@array/incident_locations"
+                    android:gravity="center_horizontal"
+                    android:spinnerMode="dialog"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtLocation" />
+-->
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+
+                    android:background="@drawable/background_grey"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:text="Incident Description"
+                    android:textColor="@color/Label_text2"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtIncidentSummary" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+
+                    android:background="@drawable/background_grey"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:text="Incident Summary (Max = 50 char)"
+                    android:textColor="@color/Label_text2"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chkNoRecipientInvloved" />
+
+
+                <TextView
+                    android:id="@+id/txttype"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical|left"
+                    android:paddingStart="15dp"
+                    android:text="Incident Type:"
+                    android:textColor="@color/Label_text2"
+                    android:background="@drawable/background_grey"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toTopOf="@+id/spinnerIncidentType"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/txtSerivity"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/Label_text2"
+                    android:background="@drawable/background_grey"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical|left"
+                    android:paddingStart="15dp"
+                    android:text="Incident Severity : "
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinnerIncidentType" />
+
+
+                <TextView
+                    android:id="@+id/txtLocation"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+
+                    android:layout_marginTop="8dp"
+
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical|left"
+                    android:paddingStart="15dp"
+                    android:text="Incident Location : "
+                    android:textColor="@color/Label_text2"
+                    android:background="@drawable/background_grey"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinnerIncidentSeverity" />
+
+                <TextView
+                    android:id="@+id/txtAction_label"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/Label_text2"
+                    android:background="@drawable/background_grey"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical|left"
+                    android:paddingStart="15dp"
+                    android:text="Actions"
+
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtRosterNote" />
+
+
+                <TextView
+                    android:id="@+id/txtOutcome_label"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+
+                    android:layout_marginTop="8dp"
+
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical|left"
+                    android:paddingStart="15dp"
+                    android:text="Outcome"
+                    android:textColor="@color/Label_text2"
+                    android:background="@drawable/background_grey"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAction" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

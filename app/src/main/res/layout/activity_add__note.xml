@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:focusableInTouchMode="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/bg_default"
+    tools:context=".Add_Note_Activity">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@color/blue_header"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:lineSpacingExtra="8dp"
+        android:text="@string/Client_Note_Title"
+        android:textColor="#fff"
+        android:textSize="14dp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rl_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:gravity="center"
+                android:padding="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <!-- ✅ New CheckBox added here -->
+                <CheckBox
+                    android:id="@+id/sampleCheckBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="Email to Primary Case/Care Manager"
+                    android:textColor="#000000"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtFeedBack"
+                    tools:visibility="gone" />
+
+                <!-- CANCEL Button -->
+                <Button
+                    android:id="@+id/btnExit"
+                    android:layout_width="96dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/btn_blue_light"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="CANCEL"
+                    android:textColor="#fff"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/btnOK"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sampleCheckBox" />
+
+                <!-- SAVE Button -->
+                <Button
+                    android:id="@+id/btnOK"
+                    android:layout_width="96dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/btn_blue_new"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="SAVE"
+                    android:textColor="#fff"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sampleCheckBox" />
+
+                <EditText
+                    android:id="@+id/txtShiftPurpose"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:autoText="true"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:elevation="2dp"
+                    android:gravity="left"
+                    android:windowSoftInputMode="stateUnchanged"
+                    android:imeOptions="actionDone"
+                    android:inputType="textImeMultiLine|textMultiLine"
+                    android:paddingStart="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="#000"
+                    android:textSize="12dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/img_Shift_Purpose"
+                    android:digits="@string/myAlphaNumericASCII"/>
+
+                <EditText
+                    android:id="@+id/txtRosterNote"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="150dp"
+                    android:layout_below="@+id/lbl1RosterNote"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:elevation="2dp"
+                    android:gravity="left"
+                    android:windowSoftInputMode="stateUnchanged"
+                    android:imeOptions="actionDone"
+                    android:inputType="textImeMultiLine|textMultiLine"
+                    android:paddingStart="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="15dp"
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl1RosterNote"
+                    android:digits="@string/myAlphaNumericASCII"/>
+
+
+                <EditText
+                    android:id="@+id/txtAction"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:layout_below="@+id/lblAction"
+                    android:windowSoftInputMode="stateUnchanged"
+                    android:autoText="true"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:elevation="2dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="left"
+                    android:imeOptions="actionDone"
+                    android:inputType="textImeMultiLine|textMultiLine"
+                    android:paddingStart="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="15dp"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblAction"
+                    android:digits="@string/myAlphaNumericASCII"/>
+
+
+                <EditText
+                    android:id="@+id/txtOutCome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp"
+                    android:layout_below="@+id/lbloutCome"
+                    android:windowSoftInputMode="stateUnchanged"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:elevation="2dp"
+                    android:gravity="left"
+                    android:imeOptions="actionDone"
+                    android:inputType="textImeMultiLine|textMultiLine"
+                    android:paddingStart="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="15dp"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lbloutCome"
+                    android:digits="@string/myAlphaNumericASCII"/>
+
+                <TextView
+                    android:id="@+id/lblFeedBack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/Label_text2"
+                    android:background="@drawable/background_grey"
+                    android:fontFamily="@font/roboto_medium"
+                    android:paddingStart="15dp"
+                    android:text="Is there any other feedback or concerns you want to raise from this support?"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtOutCome" />
+                <EditText
+                    android:id="@+id/txtFeedBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="150dp"
+                    android:layout_below="@+id/lblFeedBack"
+                    android:autoText="true"
+                    android:windowSoftInputMode="stateUnchanged"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:elevation="2dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="left"
+                    android:imeOptions="actionDone"
+                    android:inputType="textImeMultiLine|textMultiLine"
+                    android:paddingStart="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="15dp"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblFeedBack"
+                    android:digits="@string/myAlphaNumericASCII"/>
+
+
+
+                <TextView
+                    android:id="@+id/lblNoteType"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:text="Note Type "
+                    android:textColor="@color/Label_text2"
+                    android:background="@drawable/background_grey"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtShiftDate" />
+
+                <TextView
+                    android:id="@+id/spNoteType"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinner_border"
+                    android:drawableEnd="@drawable/dwon"
+                    android:fontFamily="@font/roboto_medium"
+
+                    android:gravity="center_vertical"
+                    android:hint="Select an option"
+                    android:lineSpacingExtra="8sp"
+                    android:paddingStart="15dp"
+                    android:text=""
+                    android:textColor="#171313"
+                    android:textColorHint="#171313"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblNoteType" />
+
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:textColor="@color/Label_text2"
+                    android:background="@drawable/background_grey"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:text="Date of service delivery"
+
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/txtShiftDate"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:textColor="@color/Label_text2"
+                    android:background="@drawable/background_grey"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:text="Date"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+                <TextView
+                    android:id="@+id/lblShiftGoals"
+                    android:layout_width="0dp"
+
+                    android:layout_height="40dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/background_grey"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:text="What goals are the focus of today’s support?"
+                    android:textColor="@color/Label_text2"
+
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spNoteType" />
+
+                <EditText
+                    android:id="@+id/txtShiftgoals"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:elevation="2dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="left"
+                    android:text="Goals are as outlined on Clients NDIA Plan -"
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:imeOptions="actionDone"
+                    android:inputType="textImeMultiLine|textMultiLine"
+                    android:paddingStart="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblShiftGoals"
+                    android:digits="@string/myAlphaNumericASCII"/>
+
+
+                <ImageView
+                    android:id="@+id/imgGoals"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/lblShiftGoals"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/lblShiftGoals"
+                    app:srcCompat="@drawable/forward" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/img_Shift_Purpose"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_grey"
+                    app:layout_constraintBottom_toTopOf="@+id/txtShiftPurpose"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtShiftgoals">
+
+                    <TextView
+                        android:id="@+id/lblShiftPurpose"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:paddingStart="15dp"
+                        android:text="How did your activities with the client link with the goals in the NDIA plan.  For example “Assisted with shopping – goal to live independently”"
+                        android:textColor="@color/Label_text2"
+                        android:textSize="14dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/img_view_Strategy"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/img_view_Strategy"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/imgStrategy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/forward" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/lbl1RosterNote"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+
+                    android:background="@drawable/background_grey"
+                    android:gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:text="What ongoing or follow-up activities could be done in the next support to continue to work towards the goals?"
+                    android:textColor="@color/Label_text2"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtShiftPurpose"
+                    app:layout_goneMarginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/lblAction"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/background_grey"
+                    android:fontFamily="@font/roboto_medium"
+                    android:paddingStart="15dp"
+                    android:text="What appointments/stores/locations did you visit with the client during this support?"
+                    android:textColor="@color/Label_text2"
+
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtRosterNote" />
+
+                <TextView
+                    android:id="@+id/lbloutCome"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+
+                    android:background="@drawable/background_grey"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:text="How many kilometres did you travel with the client during this support?"
+                    android:textColor="@color/Label_text2"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtAction" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,21 @@
+{
+  "client_id" : "a13eadb6-4d98-4c27-bebf-99c5c3fad809",
+  "redirect_uri" : "msauth://adamas.traccs.mta_20_06/NY%2BXdK%2BjXaY3jDD8Ezy2jO%2FDwFU%3D",
+  "account_mode" : "MULTIPLE",
+  "broker_redirect_uri_registered": false,
+  "authorities": [
+    {
+      "type": "B2C",
+      "authority_url": "https://fabrikamb2c.b2clogin.com/tfp/fabrikamb2c.onmicrosoft.com/b2c_1_susi/",
+      "default": true
+    },
+    {
+      "type": "B2C",
+      "authority_url": "https://fabrikamb2c.b2clogin.com/tfp/fabrikamb2c.onmicrosoft.com/b2c_1_edit_profile/"
+    },
+    {
+      "type": "B2C",
+      "authority_url": "https://fabrikamb2c.b2clogin.com/tfp/fabrikamb2c.onmicrosoft.com/b2c_1_reset/"
+    }
+  ]
+}

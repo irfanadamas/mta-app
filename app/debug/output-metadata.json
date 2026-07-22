@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "adamas.traccs.mta_20_06",
+  "variantName": "debug",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "properties": [],
+      "versionCode": 202101003,
+      "versionName": "2021.01.001",
+      "enabled": true,
+      "outputFile": "app-debug.apk"
+    }
+  ]
+}

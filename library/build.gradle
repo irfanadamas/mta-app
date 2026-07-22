@@ -1,0 +1,41 @@
+apply plugin: 'com.android.library'
+
+android {
+    signingConfigs {
+        debug {
+            storeFile file(var3)
+            storePassword 'samada2002'
+            keyAlias 'MTA_Rlease'
+            keyPassword 'samada2002'
+        }
+    }
+    compileSdkVersion 35
+    buildToolsVersion "30.0.3"
+//irfan 24 Aug 22
+    defaultConfig {
+        minSdkVersion 24
+        targetSdkVersion 35
+        versionCode 202309004
+        versionName "22.09.004"
+    }
+    buildTypes {
+        release {
+            useProguard false
+            minifyEnabled true
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+        }
+    }
+    buildToolsVersion '30.0.3'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:30.0.0'
+    implementation 'com.google.firebase:firebase-inappmessaging-display:19.0.7'
+}
+
+apply from: '../maven_push.gradle'
+apply plugin: 'com.google.gms.google-services'
+googleServices { disableVersionCheck = true }

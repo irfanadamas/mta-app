@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+<domain-config>
+   <domain includeSubdomains="true">https://mta-dev-uat.integratedliving.org.au/</domain>
+
+      <trust-anchors>
+<!--          <certificates src="system" />-->
+          <certificates src="@raw/deployment_cert"/>
+    </trust-anchors>
+
+<!--    <pin-set expiration="2025-12-31">-->
+<!--        <pin digest="SHA-256">fwza0LRMXouZHRC8Ei+4PyuldPDcf3UKgO/04cDM1oE=</pin>-->
+<!--        &lt;!&ndash; backup pin &ndash;&gt;-->
+<!--        <pin digest="SHA-256">fwza0LRMXouZHRC8Ei+4PyuldPDcf3UKgO/04cDM1oE=</pin>-->
+<!--    </pin-set>-->
+</domain-config>
+
+<debug-overrides>
+    <trust-anchors>
+        <certificates src="@raw/deployment_cert"/>
+        <certificates src="system" />
+    </trust-anchors>
+
+</debug-overrides>
+</network-security-config>

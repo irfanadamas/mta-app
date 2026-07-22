@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+
+    android:fitsSystemWindows="true"
+    android:background="@color/bg_default"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/btnDay_prev"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4dp"
+        android:layout_toStartOf="@+id/TextDate"
+        android:background="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/TextDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backward" />
+
+
+    <TextView
+        android:id="@+id/TextDate"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_toStartOf="@+id/btnDayNext"
+        android:background="@color/transparent"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:text="@string/RosterDate"
+        android:textColor="#000000"
+        android:textSize="16sp"
+
+        app:layout_constraintEnd_toStartOf="@+id/btnDayNext"
+        app:layout_constraintStart_toEndOf="@+id/btnDay_prev"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnDayNext"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginEnd="4dp"
+        android:background="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="@+id/TextDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/forward" />
+
+
+    <TextView
+        android:id="@+id/txtRecipient"
+        android:layout_width="0dp"
+        android:layout_height="79dp"
+        android:background="@color/blue_header"
+        android:fontFamily="@font/roboto"
+        android:gravity="center"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/Recipient"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/listViewMain"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextDate" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listViewMain"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="8dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp"
+            android:columnWidth="0dp"
+            android:numColumns="1"
+
+            android:background="#B4B4B4"
+            android:cacheColorHint="#00000000"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtRecipient"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

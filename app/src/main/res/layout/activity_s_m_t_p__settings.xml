@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:paddingStart="15dp"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/bg_default"
+    tools:context=".SMTP_Settings">
+
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="96dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_blue_new"
+        android:gravity="center"
+        android:text="Save"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMsg" />
+
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="96dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_blue_light"
+        android:gravity="center"
+        android:text="@android:string/cancel"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toStartOf="@+id/btnSave"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMsg" />
+
+    <EditText
+        android:id="@+id/txtServer"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toRightOf="@+id/tv_PinCode"
+        android:background="@drawable/border"
+        android:fontFamily="@font/roboto"
+        android:hint="enter: mail.smtp.server.net"
+        android:lines="1"
+        android:paddingLeft="15dp"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_PinCode"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtUser"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toRightOf="@+id/tv_User"
+        android:background="@drawable/border"
+        android:fontFamily="@font/roboto"
+        android:hint="Enter user details"
+        android:inputType="textWebEditText"
+        android:lines="1"
+        android:paddingLeft="15dp"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_User"
+        app:layout_constraintTop_toBottomOf="@+id/txtServer">
+
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/txtpassword"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toRightOf="@+id/tv_pwd"
+        android:background="@drawable/border"
+        android:fontFamily="@font/roboto"
+        android:hint="Enter password "
+        android:inputType="textPassword"
+        android:lines="1"
+        android:paddingLeft="15dp"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_pwd"
+        app:layout_constraintTop_toBottomOf="@+id/txtUser" />
+
+    <EditText
+        android:id="@+id/txtEmail_subject"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toRightOf="@+id/tv_pwd"
+        android:background="@drawable/border"
+        android:fontFamily="@font/roboto"
+        android:hint="TRACCS Alerts"
+
+        android:inputType="text"
+        android:lines="1"
+        android:paddingLeft="15dp"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_pwd4"
+        app:layout_constraintTop_toBottomOf="@+id/txtFormEmail" />
+
+    <EditText
+        android:id="@+id/txtPort"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toRightOf="@+id/tv_pwd"
+        android:background="@drawable/border"
+        android:fontFamily="@font/roboto"
+        android:hint="Enter server port details "
+
+        android:inputType="number"
+        android:lines="1"
+        android:paddingLeft="15dp"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_pwd2"
+        app:layout_constraintTop_toBottomOf="@+id/txtpassword" />
+
+    <EditText
+        android:id="@+id/txtFormEmail"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toRightOf="@+id/tv_pwd"
+        android:background="@drawable/border"
+        android:fontFamily="@font/roboto"
+        android:hint="Enter from email"
+
+        android:inputType="textWebEmailAddress"
+        android:lines="1"
+        android:paddingLeft="15dp"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_pwd3"
+        app:layout_constraintTop_toBottomOf="@+id/txtPort" />
+
+    <TextView
+        android:id="@+id/tv_pwd4"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_grey"
+        android:fontFamily="@font/roboto"
+        android:gravity="clip_vertical"
+        android:paddingLeft="10dp"
+        android:text="Email Subject"
+        android:textColor="@color/Label_text2"
+
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtEmail_subject"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pwd3" />
+
+    <TextView
+        android:id="@+id/tv_pwd3"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+
+        android:background="@drawable/background_grey"
+        android:fontFamily="@font/roboto"
+        android:paddingLeft="10dp"
+        android:text="From Email"
+        android:textColor="@color/Label_text2"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtFormEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pwd2" />
+
+    <TextView
+        android:id="@+id/tv_pwd2"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_grey"
+        android:fontFamily="@font/roboto"
+        android:gravity="clip_vertical"
+        android:paddingLeft="10dp"
+        android:text="Server Port"
+        android:textColor="@color/Label_text2"
+
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtPort"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pwd" />
+
+    <TextView
+        android:id="@+id/tv_PinCode"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/background_grey"
+        android:fontFamily="@font/roboto"
+        android:gravity="clip_vertical"
+        android:paddingLeft="10dp"
+        android:text="Server "
+
+        android:textColor="@color/Label_text2"
+
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtServer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_User"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_grey"
+        android:fontFamily="@font/roboto"
+        android:gravity="clip_vertical"
+        android:paddingLeft="10dp"
+        android:text="User "
+
+        android:textColor="@color/Label_text2"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_PinCode" />
+
+    <TextView
+        android:id="@+id/tv_pwd"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_grey"
+        android:fontFamily="@font/roboto"
+        android:gravity="clip_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/form_label_password"
+
+        android:textColor="@color/Label_text2"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/txtpassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_User" />
+
+
+    <TextView
+        android:id="@+id/textMsg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:minHeight="40dp"
+        android:text=""
+        android:textColor="#FF0000"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail_subject" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

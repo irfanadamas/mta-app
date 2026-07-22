@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#002060</color>
+    <color name="colorAccent">#002060</color>
+    <color name="bg_default">#D1DDF4</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent2">#0D000000</color>
+    <color name="background_app">#ffffff</color>
+    <color name="background_white">#FFFFFF</color>
+    <color name="header_text_color">#F6F4F4</color>
+    <color name="button_text_color">#880E4F</color>
+    <color name="title_color">#2F5597</color>
+    <color name="blue_header">#2F5597</color>
+    <color name="shidt_detail_color">#F1F9FF</color>
+    <color name="activity_backcolor">#fff</color>
+
+    <color name="actionbar_background">#002060</color>
+    <color name="Label_background2">#70B4B4B4</color>
+
+    <color name="actionbar_text">#ffffff</color>
+    <color name="Label_text">#000000</color>
+    <color name="Label_text2">#BE171313</color>
+
+    <color name="text_color">#000</color>
+    <color name="text_lgray">#808080</color>
+    <color name="text_gray">#323232</color>
+    <color name="wallet_bright_foreground_disabled_holo_light">#323232</color>
+
+    <color name="wallet_holo_blue_light">#002060</color>
+
+    <color name="gray">#CCCCCC</color>
+    <color name="login_text_color">#1a346b</color>
+    <color name="black">#000000</color>
+    <color name="color_cursor">#000000</color>
+    <item name="blue" type="color">#002060</item>
+    <item name="red" type="color">#FFFF4444</item>
+    <item name="blue_206" type="color">#002060</item>
+    <item name="power_blue2" type="color">#F1F9FF</item>
+    <item name="powder_blue" type="color">#F1F9FF</item>
+    <item name="power_blue" type="color">#FFFFFF</item>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+
+</resources>

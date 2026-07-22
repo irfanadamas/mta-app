@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "adamas.traccs.mta_20_06",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "properties": [],
+      "versionCode": 202104003,
+      "versionName": "21.04.003",
+      "enabled": true,
+      "outputFile": "app-release.apk"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/bg_default"
+    tools:context=".Group_Alert_Activity">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/shidt_detail_color">
+
+         <adamas.traccs.mta_20_06.ExpandableHeightListView
+            android:id="@+id/lstAlerts"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:background="@color/powder_blue"
+            android:dividerHeight="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sperator1">
+
+
+        </adamas.traccs.mta_20_06.ExpandableHeightListView>
+
+        <TextView
+            android:id="@+id/txtAlerts"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+
+            android:background="@color/powder_blue"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingStart="27dp"
+            android:textColor="#F80818"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/txtRunsheet_heading"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/powder_blue"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingStart="25dp"
+                android:text="Runsheet Alerts"
+                android:textColor="#F80818"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sperator2" />
+
+            <TextView
+                android:id="@+id/txtRunsheet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:background="@color/power_blue"
+                android:fontFamily="@font/roboto"
+                android:lineSpacingExtra="8sp"
+                android:paddingStart="25dp"
+                android:paddingTop="8dp"
+                android:textColor="#F80818"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sperator3" />
+
+        <View
+            android:id="@+id/sperator1"
+            style="@style/Divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAlerts" />
+
+            <View
+                android:id="@+id/sperator3"
+                style="@style/Divider"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtRunsheet_heading" />
+
+        <View
+            android:id="@+id/sperator2"
+            style="@style/Divider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lstAlerts" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

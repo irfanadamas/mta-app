@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top"
+
+    android:focusableInTouchMode="true"
+
+    android:orientation="horizontal">
+
+
+    <Button
+        android:id="@+id/btnMenu"
+        style="@style/Platform.Widget.AppCompat.Spinner"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/baseline_notes"
+        android:orientation="vertical"
+        android:spinnerMode="dialog"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+
+        android:id="@+id/btnAlert"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+
+        android:background="@drawable/alerts_icon2"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="#DE000000"
+        app:layout_constraintBottom_toTopOf="@+id/sperator1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRecipientDetail" />
+
+    <Button
+
+        android:id="@+id/btnOPNote"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/notes_black2"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="#DE000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnAlert"
+        app:layout_constraintTop_toBottomOf="@+id/txtRecipientDetail" />
+
+    <Button
+
+        android:id="@+id/btnMap"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/map"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="#DE000000"
+        app:layout_constraintBottom_toTopOf="@+id/sperator1"
+        app:layout_constraintStart_toEndOf="@+id/btnOPNote"
+        app:layout_constraintTop_toBottomOf="@+id/txtRecipientDetail" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:buttonTint="@color/blue_206"
+
+        android:clickable="false"
+        android:focusable="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txtRecipientDetail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto"
+        android:gravity="center_vertical"
+        android:minWidth="230dp"
+        android:paddingBottom="10dp"
+        android:text="TextView"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnMenu"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/sperator1"
+        style="@style/Divider"
+        android:layout_marginTop="16dp"
+        android:background="@color/Label_background2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAlert" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/bg_default"
+    tools:context=".Upload_Photo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/power_blue"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rl_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/btn_dark_blue_simple"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="TAKE PIC"
+                android:textColor="#fff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+
+            <Button
+                android:id="@+id/btnBrowse"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_toRightOf="@+id/button1"
+                android:background="@drawable/btn_dark_blue_simple"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="BROWSE PIC"
+                android:textColor="#fff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button1" />
+
+            <Button
+                android:id="@+id/btnUpload"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/btn_dark_blue_simple"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="UPLOAD"
+
+                android:textColor="#fff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/btnSave"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtRosterNote" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+
+                android:height="50dp"
+                android:background="@drawable/btn_blue_new"
+                android:clickable="true"
+
+
+                android:gravity="center"
+                android:text="Save Note"
+                android:textColor="#fff"
+                android:textSize="12dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtRosterNote" />
+
+            <Button
+                android:id="@+id/btnSetSize"
+                android:layout_width="96dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_toRightOf="@+id/btnSave"
+                android:height="50dp"
+                android:background="@drawable/btn_dark_blue_simple"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="SET IMAGE SIZE"
+                android:textColor="#fff"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnBrowse" />
+
+            <EditText
+                android:id="@+id/txtRosterNote"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:minHeight="150dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:autoText="true"
+                android:background="@drawable/border2"
+                android:gravity="left"
+                android:inputType="textImeMultiLine|textMultiLine"
+                android:selectAllOnFocus="true"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbl1RosterNote"
+                android:digits="@string/myAlphaNumericASCII"></EditText>
+
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="185dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="50dp"
+                android:src="@drawable/photo"
+                app:layout_constraintHeight_percent="0.25"
+                app:layout_constraintWidth_percent="0.25"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lbl1RosterNote"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:height="30dp"
+
+                android:background="@drawable/background_grey"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingStart="10dp"
+                android:text="Photo Description Note"
+                android:textAppearance="@style/spinnerDropDownItemStyle"
+                android:textColor="@color/Label_text2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnSetSize" />
+
+            <TextView
+                android:id="@+id/txtMsg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:minHeight="40dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toStartOf="@+id/btnSave"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnUpload" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

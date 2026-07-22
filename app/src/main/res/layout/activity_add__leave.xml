@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:focusableInTouchMode="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/bg_default"
+    tools:context=".Add_Leave">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/power_blue"
+            android:fillViewport="true">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView1"
+                style="@style/CardView.Light"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardElevation="5dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center|clip_vertical"
+                    android:background="@color/Label_background2">
+
+
+                    <TextView
+                        android:id="@+id/tvLeaveType"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="left"
+                        android:lineSpacingExtra="3dp"
+                        android:maxWidth="200dp"
+                        android:text="LeaveType"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                style="@style/CardView.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                app:cardElevation="5dp"
+                app:layout_constraintTop_toBottomOf="@id/cardView1">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/cmbLeaveType"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/spinner_border"
+                        android:drawableEnd="@drawable/dwon"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center_vertical"
+                        android:hint="Select an option"
+                        android:lineSpacingExtra="8sp"
+                        android:paddingStart="15dp"
+                        android:text=""
+                        android:textColor="#171313"
+                        android:textColorHint="#171313"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                style="@style/CardView.Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="2dp"
+                app:cardElevation="0dp"
+                app:layout_constraintTop_toBottomOf="@id/cardView2">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/power_blue"
+                    tools:layout_editor_absoluteX="2dp">
+
+
+                    <Button
+                        android:id="@+id/btnSettings"
+                        android:layout_width="96dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_toRightOf="@+id/btnSave"
+                        android:width="65dp"
+                        android:height="55dp"
+                        android:background="@drawable/btn_blue_light"
+                        android:clickable="true"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="center"
+                        android:text="Cancel"
+                        android:textColor="#fff"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/lblMsg"
+                        app:layout_constraintEnd_toStartOf="@+id/btnSave"
+                        app:layout_constraintHorizontal_bias="0.9"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtLeaveNote" />
+
+                    <Button
+                        android:id="@+id/btnSave"
+                        android:layout_width="96dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:width="65dp"
+                        android:height="55dp"
+                        android:background="@drawable/btn_blue_new"
+                        android:clickable="true"
+                        android:fontFamily="@font/roboto"
+                        android:gravity="center"
+                        android:text="Save"
+                        android:textColor="#fff"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/lblMsg"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtLeaveNote" />
+
+                    <Button
+                        android:id="@+id/dtpEnd"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_toRightOf="@+id/tvEndDate"
+                        android:width="60dp"
+                        android:height="60dp"
+                        android:background="@drawable/border2"
+                        android:gravity="center_vertical"
+                        android:text="-"
+                        android:textSize="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tvEndDate"
+                        app:layout_constraintTop_toBottomOf="@+id/dtpStart" />
+
+                    <Button
+                        android:id="@+id/dtpStart"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_toRightOf="@+id/tvStarDate"
+                        android:width="60dp"
+                        android:height="60dp"
+                        android:background="@drawable/border2"
+                        android:gravity="center_vertical"
+                        android:text="-"
+                        android:textSize="12dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tvStarDate"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/txtLeaveNote"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="175dp"
+                        android:layout_below="@+id/lbl1LeaveNote"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:autoText="true"
+                        android:background="@drawable/border2"
+                        android:gravity="top|left"
+                        android:inputType="textImeMultiLine|textMultiLine"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:windowSoftInputMode="stateUnchanged"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lbl1LeaveNote"
+                        android:digits="@string/myAlphaNumericASCII"></EditText>
+
+
+                    <TextView
+                        android:id="@+id/lblMsg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_body5"
+                        android:layout_marginTop="8dp"
+
+                        android:text=""
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnSettings" />
+
+
+                    <TextView
+                        android:id="@+id/lbl1LeaveNote"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+
+                        android:fontFamily="@font/roboto_medium"
+                        android:paddingStart="5dp"
+                        android:paddingTop="10dp"
+                        android:text="  Leave Note"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/Label_text2"
+                        android:background="@drawable/background_grey"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/dtpEnd"
+                        app:layout_constraintVertical_bias="0.07999998" />
+
+                    <TextView
+                        android:id="@+id/tvEndDate"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/background_grey"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="  End Date    "
+                        android:textColor="@color/Label_text2"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvStarDate" />
+
+                    <TextView
+                        android:id="@+id/tvStarDate"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/background_grey"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="center"
+                        android:text="  Start Date  "
+                        android:textColor="@color/Label_text2"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

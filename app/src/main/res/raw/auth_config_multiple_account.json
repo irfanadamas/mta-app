@@ -1,0 +1,13 @@
+{
+  "client_id" : "a13eadb6-4d98-4c27-bebf-99c5c3fad809",
+  "authorization_user_agent" : "DEFAULT",
+  "redirect_uri" : "msauth://adamas.traccs.mta_20_06/NY%2BXdK%2BjXaY3jDD8Ezy2jO%2FDwFU%3D",
+  "account_mode" : "MULTIPLE",
+  "broker_redirect_uri_registered": true,
+  "authorities" : [
+    {
+      "type": "AAD",
+      "authority_url": "https://login.microsoftonline.com/common/oauth2/nativeclient"
+    }
+  ]
+}

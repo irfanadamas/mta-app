@@ -1,0 +1,49 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jwetherell.quick_response_code.MainActivity"
+    android:background="@drawable/curved_background" >
+
+
+    <item android:id="@+id/btnbtnLoad"
+        android:background="@drawable/button_new"
+        android:icon="@drawable/load"
+        android:title="Refresh"
+        >
+
+    </item>
+    <item android:id="@+id/btnShowAll2"
+        android:icon="@drawable/checkbox3"
+        android:background="@drawable/button_new"
+        android:title="Show All"
+        >
+    </item>
+
+    <item android:id="@+id/btnDeliver"
+        android:icon="@drawable/checkbox"
+        android:background="@drawable/button_new"
+
+        android:title="Deliver" >
+    </item>
+
+    <item android:id="@+id/btnLeave"
+        android:icon="@drawable/leave22"
+        android:background="@drawable/button_new"
+        android:title="Add Leave Entry" >
+    </item>
+    <item android:id="@+id/btnBooking"
+        android:icon="@drawable/swirch_view"
+        android:background="@drawable/button_new"
+        android:title="Booking" >
+    </item>
+
+    <item android:id="@+id/btnRosterAvailability"
+        android:icon="@drawable/ic_alarm_add"
+        android:background="@drawable/button_new"
+        android:title="Add Availability" >
+    </item>
+    <item android:id="@+id/btnExit"
+        android:icon="@drawable/ic_exit"
+        android:background="@drawable/button_new"
+        android:title="Exit Traccs Mobile" >
+    </item>
+</menu>

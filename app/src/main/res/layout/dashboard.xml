@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/shidt_detail_color"
+    android:theme="@style/Theme.AppCompat.NoActionBar">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/blue_206">
+
+        <ImageButton
+            android:id="@+id/btnExit"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:foregroundGravity="center|center_horizontal"
+            android:src="@drawable/close" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:paddingRight="15dp"
+            android:text="My Dashboard"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/rl_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        >
+        <TextView
+            android:id="@+id/txtTotalBookings"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:text=" Total Bookings 13"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/rl_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_2"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="@color/shidt_detail_color"
+        android:gravity="center"
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/rl_detail1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/shidt_detail_color"
+            android:gravity="center"
+            >
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/rl_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_2"
+                android:layout_gravity="center_horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/txtDailyHours2"
+                    android:layout_width="125dp"
+                    android:layout_height="35dp"
+
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#fff"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:text="Daily Hours"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/txtDailyHours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@+id/txtDailyHours2"
+                    android:background="#fff"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:text="03:45"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/rl_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/rl_3"
+                >
+
+                <TextView
+                    android:id="@+id/txtDailyKM2"
+                    android:layout_width="125dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#fff"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:text="Daily KM"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtDailyKM"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#fff"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:text="0"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/rl_detail2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_detail1"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:background="@color/shidt_detail_color">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/rl_31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/txtTotalHours2"
+                    android:layout_width="125dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/txtDailyHours2"
+                    android:layout_marginStart="8dp"
+
+                    android:background="#fff"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:text="Total Hours"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtTotalHours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_toRightOf="@+id/txtTotalHours2"
+                    android:background="#fff"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:text="12:00"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/rl_41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/rl_31"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/txtTotalKM2"
+                    android:layout_width="125dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="8dp"
+                    android:background="#fff"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:text="Total KM"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/txtTotalKM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toRightOf="@+id/txtTotalKM2"
+                    android:background="#fff"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:text="45"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/rl_detail3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_detail2"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+
+        <Button
+            android:id="@+id/btnPolicyLink"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#85B9D5"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_gravity="center"
+            android:paddingStart="5dp"
+
+            android:text="POLICIES / PROCEDURES"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/rl_detail4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_detail3"
+        android:gravity="center"
+        android:layout_marginTop="10px"
+        >
+
+
+        <Button
+            android:id="@+id/btnWebsite"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#85B9D5"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_gravity="center"
+            android:paddingStart="5dp"
+            android:text="COMPANY WEBSITE"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <Button
+        android:id="@+id/btnCompetencies"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#85B9D5"
+        android:text="COMPETENCIES"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+
+
+    <TextView
+        android:id="@+id/txtlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/shidt_detail_color"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/rl_detail"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

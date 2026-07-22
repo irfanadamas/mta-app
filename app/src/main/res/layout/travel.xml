@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="@color/transparent"
+        android:focusableInTouchMode="true"
+        tools:context=".Travel">
+
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:background="@color/transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="96dp"
+                    android:layout_height="40dp"
+
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:width="65dp"
+                    android:height="55dp"
+                    android:background="@drawable/btn_blue_new"
+                    android:clickable="true"
+                    android:text="Save"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:textSize="14dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtRosterNote"
+                    app:layout_constraintVertical_bias="0.0" />
+                <RadioGroup
+                    android:id="@+id/radiogroup2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chkCharge" >
+
+                    <RadioButton
+                        android:id="@+id/chkMyCar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:buttonTint="@color/blue_206"
+                        android:checked="false"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="My Own Car" />
+
+                    <RadioButton
+                        android:id="@+id/chkFleetVehicle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/radioTravelBetween"
+                        android:layout_toEndOf="@+id/radioTravelBetween"
+                        android:layout_toRightOf="@+id/radioTravelBetween"
+                        android:buttonTint="@color/blue_206"
+                        android:checked="false"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Fleet Vehicle" />
+
+
+                </RadioGroup>
+
+                <CheckBox
+                    android:id="@+id/chkMyCar_Old"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:buttonTint="@color/blue_206"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="My Own Car"
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.25"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/chkCharge" />
+
+
+                <CheckBox
+                    android:id="@+id/chkCharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="8dp"
+                    android:buttonTint="@color/blue_206"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="Chargeable"
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toStartOf="@+id/radiogroup2"
+                    app:layout_constraintTop_toBottomOf="@+id/tvKM" />
+
+
+                <EditText
+                    android:id="@+id/txtRosterNote"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="100dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/border"
+                    android:gravity="left"
+                    android:inputType="textImeMultiLine|textMultiLine"
+                    android:selectAllOnFocus="true"
+                    android:singleLine="false"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lbl1RosterNote"
+                    android:digits="@string/myAlphaNumericASCII"></EditText>
+
+
+                <EditText
+                    android:id="@+id/txtEndKm"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_toRightOf="@+id/tvKM"
+                    android:width="100dp"
+                    android:height="40dp"
+                    android:background="@drawable/border"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/tvEndKm"
+                    app:layout_constraintTop_toBottomOf="@+id/txtStartKm"></EditText>
+
+                <EditText
+                    android:id="@+id/txtStartKm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_toRightOf="@+id/tvEndKm"
+                    android:width="100dp"
+                    android:height="40dp"
+                    android:background="@drawable/border"
+                    android:inputType="numberDecimal"
+
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/tvStartKm"
+                    app:layout_constraintTop_toBottomOf="@+id/radiogroup1">
+
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/txtKM"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_toRightOf="@+id/tvStartKm"
+                    android:width="100dp"
+                    android:height="40dp"
+                    android:background="@drawable/border"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintStart_toEndOf="@+id/tvKM"
+                    app:layout_constraintTop_toBottomOf="@+id/txtEndKm">
+
+
+                </EditText>
+
+                <RadioGroup
+                    android:id="@+id/radiogroup1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTravel">
+
+                    <RadioButton
+                        android:id="@+id/radioTravelBetween"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:buttonTint="@color/blue_206"
+                        android:checked="false"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Travel Between" />
+
+                    <RadioButton
+                        android:id="@+id/radioWithin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/radioTravelBetween"
+                        android:layout_toEndOf="@+id/radioTravelBetween"
+                        android:layout_toRightOf="@+id/radioTravelBetween"
+                        android:buttonTint="@color/blue_206"
+                        android:checked="false"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Travel Within" />
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/lbl1RosterNote"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:textColor="@color/Label_text2"
+                    android:background="@drawable/background_grey"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text=" Travel Note : "
+                    android:textAppearance="@style/spinnerDropDownItemStyle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radiogroup2" />
+
+                <TextView
+                    android:id="@+id/tvTravel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/Label_text2"
+                    android:background="@drawable/background_grey"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:height="50dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:gravity="center"
+                    android:text="Travel Information "
+
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/tvKM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/background_grey"
+                    android:fontFamily="@font/roboto_medium"
+                    android:minWidth="80dp"
+                    android:text="Total KM"
+                    android:textColor="@color/Label_text2"
+                    app:layout_constraintEnd_toStartOf="@+id/txtKM"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvEndKm" />
+
+                <TextView
+                    android:id="@+id/tvEndKm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="8dp"
+
+                    android:fontFamily="@font/roboto_medium"
+                    android:minWidth="80dp"
+                    android:text="End KM  "
+                    android:textColor="@color/Label_text2"
+                    android:background="@drawable/background_grey"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvStartKm" />
+
+                <TextView
+                    android:id="@+id/tvStartKm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="16dp"
+
+                    android:fontFamily="@font/roboto_medium"
+                    android:minWidth="80dp"
+                    android:text="Start KM  "
+                    android:textColor="@color/Label_text2"
+                    android:background="@drawable/background_grey"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radiogroup1" />
+
+                <TextView
+                    android:id="@+id/lblMsg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnSave"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtRosterNote"
+                    app:layout_constraintVertical_bias="0.006" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@color/shidt_detail_color"
+                    android:fontFamily="@font/roboto_medium"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="OR"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/tvKM"
+                    app:layout_constraintHorizontal_bias="0.83"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tvKM" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>

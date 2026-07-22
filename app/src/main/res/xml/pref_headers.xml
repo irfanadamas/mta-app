@@ -1,0 +1,37 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="adamas.traccs.mta.SettingsActivity$GeneralPreferenceFragment"
+        android:icon="@drawable/setting"
+        android:title="@string/login_menu_set_server" />
+
+    <header
+        android:fragment="adamas.traccs.mta.SettingsActivity$NotificationPreferenceFragment"
+        android:icon="@drawable/serverlink"
+        android:title="@string/login_menu_server_link" />
+
+    <header
+        android:fragment="adamas.traccs.mta.SettingsActivity$DataSyncPreferenceFragment"
+        android:icon="@drawable/loginmode"
+        android:title="@string/login_menu_login_mode" />
+
+    <header
+        android:fragment="adamas.traccs.mta.SettingsActivity$DataSyncPreferenceFragment"
+        android:icon="@drawable/online"
+        android:title="@string/login_menu_online_status" />
+
+
+    <header
+        android:fragment="adamas.traccs.mta.SettingsActivity$DataSyncPreferenceFragment"
+        android:icon="@drawable/ic_sync_black_24dp"
+        android:title="@string/login_menu_data_refresh" />
+
+
+    <header
+        android:fragment="adamas.traccs.mta.SettingsActivity$DataSyncPreferenceFragment"
+        android:icon="@drawable/ic_exit"
+        android:title="@string/login_logout" />
+
+</preference-headers>

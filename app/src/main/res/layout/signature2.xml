@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    tools:context=".CaptureSignature_Recipient">
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="96dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="45dp"
+        android:background="@drawable/btn_blue_new"
+        android:gravity="center"
+        android:text="Cancel"
+
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clear" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="96dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btn_blue_light"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="CANCEL"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/getsign"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_sign2" />
+
+    <Button
+        android:id="@+id/getsign"
+        android:layout_width="96dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btn_blue_new"
+        android:gravity="center"
+        android:text="SAVE"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_sign2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rl_head"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/actionbar_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgBack2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/arrow_left" />
+
+        <TextView
+            android:id="@+id/txtMainLabel"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:background="@color/actionbar_background"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center"
+
+            android:lineSpacingExtra="8dp"
+            android:text="Add Signature"
+            android:textColor="#fff"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgBack2"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_sign2"
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:layout_below="@+id/tableLayout1"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblMsg">
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@color/blue_header"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:lineSpacingExtra="8dp"
+        android:text="Recipient"
+
+        android:textColor="#fff"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rl_head" />
+
+    <TextView
+        android:id="@+id/lblMsg"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background_grey"
+        android:fontFamily="@font/roboto"
+        android:gravity="clip_vertical"
+        android:maxLength="30"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:text="Sign below:"
+
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Label_text2"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt1" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

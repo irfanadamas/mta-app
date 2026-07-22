@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<path  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <external_path
+        name="my_images"
+        path="Android/data/adamas.traccs.mta_20_06/files/pictures">
+
+    </external_path>
+</path>

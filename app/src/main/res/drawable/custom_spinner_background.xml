@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <solid android:color="@android:color/transparent" />
+    <corners android:radius="0dp" />
+    <Elevation   app:cardElevation="1dp"/>
+    <stroke
+        android:width="3dp"
+        android:color="@android:color/darker_gray" />
+</shape>

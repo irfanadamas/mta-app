@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <!--<item android:id="@+id/mnu_add"
+            android:icon="@android:drawable/ic_menu_add"
+
+            android:title="Note Management" />
+
+        <item android:id="@+id/mnu_edit"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="View Attendees" />-->
+
+        <item android:id="@+id/mnu_exit"
+            android:icon="@android:drawable/ic_menu_save"
+            android:title="Exit" />
+
+
+</menu>

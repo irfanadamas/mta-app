@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "343033669830",
+    "firebase_url": "https://mta-traccs.firebaseio.com",
+    "project_id": "mta-traccs",
+    "storage_bucket": "mta-traccs.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343033669830:android:38af9a66c256dc65f18fc7",
+        "android_client_info": {
+          "package_name": "sbcare.traccs.mta_20_06"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "343033669830-ejucjlj994l8u1faspprhkfkusp2745p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdVGZ64a090o9IUDUCNvpDBApMdN_U-iM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "343033669830-ejucjlj994l8u1faspprhkfkusp2745p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "343033669830-60bkvnhgdfernnpmak88q8sejk5sbh64.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.adamas.traccsmta"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

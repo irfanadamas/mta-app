@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="adamas.traccs.mta_20_06">
+
+    <permission
+        android:name="adamas.traccs.mta_20_06.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="true" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="adamas.traccs.mta_20_06.ControlApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/CustomActionBarTheme"
+        android:usesCleartextTraffic="true"
+        >
+
+        <activity android:name=".MTA_Guide" />
+        <activity
+            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:launchMode" />
+        <activity
+            android:name=".Note_Filter"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/filter"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".Login"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:exported="true"
+            android:label="@string/main_activity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/main_activity"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".msalandroidapp.MainActivity2Factor"
+            android:exported="true">
+
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.VIEW" />-->
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--                <category android:name="android.intent.category.BROWSABLE" />-->
+<!--                <data android:scheme="msauth"-->
+<!--                    android:host="adamas.traccs.mta_20_06"-->
+<!--                    android:path="/hj9/7EtvWP5aEytM4S5ERIEJ2C8=" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name="com.microsoft.identity.client.BrowserTabActivity"
+            android:exported="true"
+
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!--
+                    Add in your scheme/host from registered redirect URI
+                    note that the leading "/" is required for android:path
+                -->
+                <data
+                    android:host="adamas.traccs.mta_20_06"
+                    android:path="/hj9/7EtvWP5aEytM4S5ERIEJ2C8="
+                    android:scheme="msauth"
+                     />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Group_Alert_Activity"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/show_alert"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".PinCode_Login"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/pincode_login"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".Care_Plane_Notes"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/carer_plan_note"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".Shift_Detail"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/title_activity_shift__detail__view"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/daily_dairy"
+            android:theme="@style/CustomActionBarTheme">
+
+        </activity>
+        <activity
+            android:name=".Client_Profile"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/client_profile"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".SMTP_Settings"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/smtp_settings"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".Upload_Photo"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/title_upload"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".Add_Service_Note"
+            android:label="@string/service_note"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".Add_Leave"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/add_leave_title"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".Add_Note_Activity"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/Client_Note_Title"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".Record_Incident"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/record_incident"
+            android:theme="@style/CustomActionBarTheme"
+            android:usesCleartextTraffic="true" />
+        <activity
+            android:name=".Group_Recipient_Activity"
+            android:label="@string/group_recipient"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".LoginMode"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/login_mode"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".Set_Server"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/login_menu_set_server"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".SettingsActivity"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".Goal_Plan_Tree"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/goal_plan"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".WebService"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/web_service"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".Travel"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/travel"
+            android:theme="@style/CustomActionBarTheme"
+            android:usesCleartextTraffic="true" />
+        <activity
+            android:name=".MyAlert"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/title_activity_my_alert"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".OP_Case_Note_Activity"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/view_client_note"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".device_reminders"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/device_reminders"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".Reminders_Activity"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/device_reminders"
+            android:launchMode="singleTop"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".CaptureSignature_Recipient"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/add_signature" />
+        <activity
+            android:name=".LocationActivity"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize" />
+        <activity
+            android:name=".SimpleScannerActivity"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize" />
+        <activity
+            android:name=".RecipientAddress"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize" /> <!-- AIzaSyBuZ7oCMx_tLJcDWMhCcwTwgyd2NJMmFLA -->
+        <!-- AIzaSyBICeyfXv-m1hqCFKJWocwxNYkqidTcFB0 -->
+        <!-- AIzaSyBuZ7oCMx_tLJcDWMhCcwTwgyd2NJMmFLA -->
+        <!-- <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyB28lda3B8O-GdtErb2tHpjpZKq34D0Vfg" /> -->
+        <activity
+            android:name=".Client_Documents"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/title_activity_client__documents"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".DocumetView"
+            android:label="@string/document_view"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name=".Roster_Availability_Main"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/roster_availability"
+            android:theme="@style/CustomActionBarTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".AddNewAttendees"
+            android:configChanges="keyboard|orientation|locale|fontScale|screenLayout|screenSize|uiMode|navigation|touchscreen|keyboardHidden|layoutDirection|smallestScreenSize"
+            android:label="@string/title_AddNewAttendees" />
+
+        <meta-data
+            android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+            android:value="com.google.firebase.components.ComponentRegistrar" />
+        <meta-data
+            android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+            android:value="com.google.firebase.components.ComponentRegistrar" />
+        <meta-data
+            android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+            android:value="com.google.firebase.components.ComponentRegistrar" />
+        <meta-data
+            android:name="google_analytics_adid_collection_enabled"
+            android:value="false" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_set_time2" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimaryDark" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA2fDobXMlcKplfEe-qaBV4trmqab5Vac4" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <receiver
+            android:name=".OnBootBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+
+
+        <!--
+         This code comented by irfan at 28/09/25 Debug run -->
+        <!--
+               <receiver
+                   android:name=".Login"
+                   android:enabled="true"
+                   android:exported="true"
+                   android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+                   <intent-filter>
+                       <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                       <category android:name="android.intent.category.DEFAULT" />
+                   </intent-filter>
+               </receiver>
+               -->
+        <!--
+       This code comented by irfan at 28/09/25 Debug run
+       -->
+
+
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" />
+        <service
+            android:name=".FirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Alert_Service"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".MyAlarmService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".load_data_service"
+            android:exported="false" />
+        <service
+            android:name=".Load_Data_Service2"
+            android:exported="false" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

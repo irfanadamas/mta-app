@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/btnTravel2"
+
+        android:icon="@drawable/work"
+        android:drawableLeft="@drawable/work"
+        android:title="Travel Claim" >
+
+    </item>
+    <item android:id="@+id/btnPic2"
+        android:icon="@drawable/ic_menu_camera"
+
+        android:title="Upload Photo" >
+    </item>
+
+    <item android:id="@+id/btnRosterNote2"
+        android:icon="@drawable/noteable"
+
+        android:title="Shift Service Report" >
+    </item>
+
+    <item android:id="@+id/btnSignature2"
+        android:icon="@drawable/bordercolor"
+
+        android:title="Signature" >
+    </item>
+    <item android:id="@+id/btnIncident2"
+        android:icon="@drawable/info2"
+
+        android:title="Record Incident" >
+    </item>
+
+    <item android:id="@+id/btnLeave2"
+        android:icon="@drawable/leave22"
+
+        android:title="Leave Entry" >
+    </item>
+    <item
+        android:id="@+id/btnClinetNote2"
+        android:orderInCategory="100"
+        android:icon="@drawable/noteable"
+        android:title="Client Note"/>
+
+    <item android:id="@+id/btnPlans2"
+        android:icon="@drawable/plan"
+        android:title="View Plan Goals" >
+    </item>
+
+    <item android:id="@+id/btnDcoument2"
+        android:icon="@drawable/ic_library_books_black_24dp"
+        android:title="View Client Documents" >
+    </item>
+
+
+</menu>

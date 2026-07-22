@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Staff Jobs">
+        <menu>
+            <item
+                android:id="@+id/nav_refresh"
+                android:icon="@drawable/ic_sync"
+                android:title="Refresh" />
+            <item
+                android:id="@+id/nav_ShowAll"
+                android:icon="@drawable/done_all"
+                android:title="Show All" />
+
+            <item
+                android:id="@+id/nav_Leave"
+                android:icon="@drawable/i_list"
+                android:title="Add Leave" />
+
+            <item
+                android:id="@+id/nav_Availability"
+                android:icon="@drawable/ic_alarm_add"
+                android:title="Add Availability" />
+        </menu>
+    </item>
+    <group android:checkableBehavior="single"
+        android:enabled="true">
+        <item
+            android:id="@+id/nav_Exit"
+            android:icon="@drawable/ic_exit"
+            android:title="Exit" />
+    </group>
+
+
+</menu>

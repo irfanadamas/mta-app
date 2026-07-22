@@ -1,0 +1,253 @@
+{
+  "project_info": {
+    "project_number": "262137555977",
+    "firebase_url": "https://mobile-time-and-attendance.firebaseio.com",
+    "project_id": "mobile-time-and-attendance",
+    "storage_bucket": "mobile-time-and-attendance.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262137555977:android:63e291d3d9d94c3d",
+        "android_client_info": {
+          "package_name": "adamas.traccs.mta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262137555977-6m5re89b7b14doueotn8heqblmgs0jna.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "adamas.traccs.mta",
+            "certificate_hash": "2abcdecc37cbee64ac92c8a5b4f4f5393947fd49"
+          }
+        },
+        {
+          "client_id": "262137555977-3e6m624mid88lo613mjngdsklgdvtn63.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuZ7oCMx_tLJcDWMhCcwTwgyd2NJMmFLA"
+        },
+        {
+          "current_key": "AIzaSyB3vJ8VhkXZKcD9s2aDacRTjEjTimPnOTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262137555977-3e6m624mid88lo613mjngdsklgdvtn63.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "262137555977-b6e3acvokeclscegdscim2fp90f303qs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.adamas.mta"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262137555977:android:940e28e86412dfa43a5cd8",
+        "android_client_info": {
+          "package_name": "beaucare.traccs.mta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262137555977-3e6m624mid88lo613mjngdsklgdvtn63.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuZ7oCMx_tLJcDWMhCcwTwgyd2NJMmFLA"
+        },
+        {
+          "current_key": "AIzaSyB3vJ8VhkXZKcD9s2aDacRTjEjTimPnOTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262137555977-3e6m624mid88lo613mjngdsklgdvtn63.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "262137555977-b6e3acvokeclscegdscim2fp90f303qs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.adamas.mta"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262137555977:android:1e43bc9da7d47bb23a5cd8",
+        "android_client_info": {
+          "package_name": "integratedliving.traccs.mta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262137555977-3e6m624mid88lo613mjngdsklgdvtn63.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuZ7oCMx_tLJcDWMhCcwTwgyd2NJMmFLA"
+        },
+        {
+          "current_key": "AIzaSyB3vJ8VhkXZKcD9s2aDacRTjEjTimPnOTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262137555977-3e6m624mid88lo613mjngdsklgdvtn63.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "262137555977-b6e3acvokeclscegdscim2fp90f303qs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.adamas.mta"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262137555977:android:f4fa723104eebddc3a5cd8",
+        "android_client_info": {
+          "package_name": "integratedliving.traccs.mta_20_06"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262137555977-3e6m624mid88lo613mjngdsklgdvtn63.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuZ7oCMx_tLJcDWMhCcwTwgyd2NJMmFLA"
+        },
+        {
+          "current_key": "AIzaSyB3vJ8VhkXZKcD9s2aDacRTjEjTimPnOTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262137555977-3e6m624mid88lo613mjngdsklgdvtn63.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "262137555977-b6e3acvokeclscegdscim2fp90f303qs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.adamas.mta"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262137555977:android:0735d44f9a842e9c3a5cd8",
+        "android_client_info": {
+          "package_name": "integratedliving.traccs.mta_25_05"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262137555977-3e6m624mid88lo613mjngdsklgdvtn63.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuZ7oCMx_tLJcDWMhCcwTwgyd2NJMmFLA"
+        },
+        {
+          "current_key": "AIzaSyB3vJ8VhkXZKcD9s2aDacRTjEjTimPnOTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262137555977-3e6m624mid88lo613mjngdsklgdvtn63.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "262137555977-b6e3acvokeclscegdscim2fp90f303qs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.adamas.mta"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262137555977:android:53842819eafd0e0d3a5cd8",
+        "android_client_info": {
+          "package_name": "integratedliving.traccs.new"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262137555977-3e6m624mid88lo613mjngdsklgdvtn63.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuZ7oCMx_tLJcDWMhCcwTwgyd2NJMmFLA"
+        },
+        {
+          "current_key": "AIzaSyB3vJ8VhkXZKcD9s2aDacRTjEjTimPnOTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262137555977-3e6m624mid88lo613mjngdsklgdvtn63.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "262137555977-b6e3acvokeclscegdscim2fp90f303qs.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.adamas.mta"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

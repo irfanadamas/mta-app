@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/bg_default">
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:padding="1dp"
+        android:layout_below="@+id/txtMsg"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alert Message"
+            android:textColor="#000"
+            android:gravity="center"
+            android:background="@drawable/header1"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center"
+        android:padding="1dp"
+        android:layout_below="@+id/rl_header"
+        >
+        <TextView
+            android:id="@+id/txtMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alert Message"
+            android:textColor="#000"
+            android:background="@drawable/background2"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="1dp"
+        android:layout_below="@+id/rl_msg"
+        >
+        <Button
+            android:id="@+id/btnAckn"
+            android:text=" Acknowledge "
+            android:background="@drawable/button_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/tick"
+            android:textColor="#000"
+            android:height="40dp"
+
+            />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:text=" Cancel "
+            android:background="@drawable/button_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/del"
+            android:textColor="#000"
+            android:height="40dp"
+            android:layout_toRightOf="@+id/btnAckn"
+            />
+    </RelativeLayout>
+</LinearLayout>

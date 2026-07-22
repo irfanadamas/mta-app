@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+   >
+
+    <item android:title="Processing">
+        <menu>
+            <item
+                android:id="@+id/nav_Start"
+                android:icon="@drawable/ic_time_24dp"
+                android:title="Start Job" />
+            <item
+                android:id="@+id/nav_End"
+                android:icon="@drawable/end_time"
+                android:title="End Job" />
+
+            <item
+                android:id="@+id/nav_Set_Time"
+                android:icon="@drawable/ic_set_time2"
+                android:title="Set Time" />
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single"
+        android:enabled="true">
+        <item
+            android:id="@+id/nav_Picture"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Upload Photo" />
+        <item
+            android:id="@+id/nav_Travel"
+            android:icon="@drawable/work"
+            android:title="Travel Claim" />
+        <item
+            android:id="@+id/nav_Client_Note"
+            android:icon="@drawable/noteable"
+            android:title="Client Note" />
+        <item
+            android:id="@+id/nav_Roster_Note"
+            android:icon="@drawable/ic_roster_note"
+            android:title="Service Note" />
+        <item
+            android:id="@+id/nav_Incident"
+            android:icon="@drawable/info2"
+            android:title="Record Incident" />
+
+        <item
+            android:id="@+id/nav_Sign"
+            android:icon="@drawable/bordercolor"
+            android:title="Signature" />
+
+        <item
+            android:id="@+id/nav_Plans"
+            android:icon="@drawable/plan"
+            android:title="View Plan Goals" />
+
+        <item
+            android:id="@+id/nav_document"
+            android:icon="@drawable/ic_library_books_black_24dp"
+            android:title="View Client Documents" />
+    </group>
+
+
+</menu>

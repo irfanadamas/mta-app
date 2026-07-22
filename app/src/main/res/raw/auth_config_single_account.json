@@ -1,0 +1,14 @@
+
+{
+  "client_id" : "a13eadb6-4d98-4c27-bebf-99c5c3fad809",
+  "authorization_user_agent" : "DEFAULT",
+  "redirect_uri" : "msauth://adamas.traccs.mta_20_06/hj9%2F7EtvWP5aEytM4S5ERIEJ2C8%3D",
+  "account_mode" : "SINGLE",
+  "broker_redirect_uri_registered": true,
+  "authorities" : [
+    {
+        "type": "AAD",
+        "authority_url": "https://login.microsoftonline.com/d20feeb0-80f8-4c47-b279-39d09e7d3fce"
+    }
+  ]
+}
