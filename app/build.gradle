@@ -35,8 +35,8 @@ android {
         applicationId "adamas.traccs.mta_20_06"
         minSdkVersion 31
         targetSdkVersion 36
-        versionCode 202607002
-        versionName "26.07.002"
+        versionCode 202607003
+        versionName "26.07.003"
 
         signingConfig signingConfigs.debug
         buildConfigField "String", "GOOGLE_API_KEY", "\"${googleKey}\""

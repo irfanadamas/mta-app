@@ -66,11 +66,12 @@
                     android:layout_marginEnd="20dp"
                     android:text="Email to Primary Case/Care Manager"
                     android:textColor="#000000"
-                    android:visibility="gone"
+                    android:checked="true"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/txtFeedBack"
-                    tools:visibility="gone" />
+                    android:visibility="gone"
+                   />
 
                 <!-- CANCEL Button -->
                 <Button

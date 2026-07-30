@@ -259,6 +259,8 @@ public class OP_Case_Note_Activity  extends AppCompatActivity {
           txtFilter  = (TextView) findViewById(R.id.txtFilter);
           Button  btnFilter=(Button)findViewById(R.id.btnFilter);
 
+
+
         if(Personid.length()<=0 || Personid.equals("0")){
             btnAddNote.setVisibility(View.GONE);
         }
@@ -301,6 +303,7 @@ public class OP_Case_Note_Activity  extends AppCompatActivity {
                 btnAddNote.setVisibility(View.INVISIBLE);
 
         }
+
 
       //  Refresh_OP_Note_data=settings.getBoolean("Refresh_OP_Note_data",false);
 
@@ -561,19 +564,22 @@ public class OP_Case_Note_Activity  extends AppCompatActivity {
             androidHttpTransport2.call(SOAP_ACTION4, envelope);
             result = (SoapPrimitive) envelope.getResponse();
 
-            if (Boolean.valueOf(result.toString()) == true) {
+            if (Boolean.parseBoolean(result.toString())) {
+
+
                 Tost_Message("Client Note added Successfully");
 
 
-            } else
+            } else {
                 Tost_Message("Operation not done - " + AccountNo + " Result=" + result.toString());
-               // Toast.makeText(getApplicationContext(), "Operation not done - " + AccountNo + " Result=" + result.toString(), Toast.LENGTH_LONG).show();
-
+                // Toast.makeText(getApplicationContext(), "Operation not done - " + AccountNo + " Result=" + result.toString(), Toast.LENGTH_LONG).show();
+                return;
+            }
             try {
                 String messgas = "The following "+ Note_Type + " note has been added to client \"" + AccountNo + "\" by \"" + StaffCode + "\" :\n\n" + Note;
                 String title = "  TRACCS Client Note Added for : " + AccountNo + "\n";
 
-                //send_local_email(title,messgas);
+               // send_local_email(title,messgas);
                 //send_email_alert(messgas, title);
 
             } catch (Exception ex) {
@@ -603,7 +609,7 @@ public class OP_Case_Note_Activity  extends AppCompatActivity {
                     .appendQueryParameter("subject", subject)
                     .appendQueryParameter("body", email_msg)
                     .build();
-            Intent emailIntent = new Intent(Intent.ACTION_SENDTO, uri);
+            Intent emailIntent = new  Intent(Intent.ACTION_SENDTO, uri);
             emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
             startActivity(Intent.createChooser(emailIntent, "Send mail..."));
             /*

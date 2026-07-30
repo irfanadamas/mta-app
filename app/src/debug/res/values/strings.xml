@@ -19,7 +19,7 @@
 
     <string name="ciam_warning_text">At this moment, CIAM does not support MS Graph, so we cannot call the graph API in this fragment. Instead we will simply output the access token after a succesful request.</string>
 
-    <string name="version">Version No. 26.07.001</string>
+    <string name="version">Version No. 26.07.003</string>
 
     <!-- >string name="action_settings">"Settings"</string-->
 
