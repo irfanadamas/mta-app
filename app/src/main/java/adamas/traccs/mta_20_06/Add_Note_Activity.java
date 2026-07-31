@@ -113,6 +113,7 @@ public class Add_Note_Activity extends AppCompatActivity implements SpellChecker
     View scrollView;
     private CheckBox sampleCheckBox;
     private boolean isCheckBoxChecked = true;
+
         private void setupActionBar() {
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {

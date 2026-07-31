@@ -22,7 +22,6 @@
     <string name="version">Version No. 26.07.003</string>
 
     <!-- >string name="action_settings">"Settings"</string-->
-
     <string name="form_label_password">Password</string>
 
     <string name="external_dir">GetSignature</string>

@@ -566,7 +566,6 @@ public class OP_Case_Note_Activity  extends AppCompatActivity {
 
             if (Boolean.parseBoolean(result.toString())) {
 
-
                 Tost_Message("Client Note added Successfully");
 
 

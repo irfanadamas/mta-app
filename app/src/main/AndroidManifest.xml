@@ -46,6 +46,7 @@
         </intent>
     </queries>
 
+
     <application
         android:name="adamas.traccs.mta_20_06.ControlApplication"
         android:allowBackup="true"
