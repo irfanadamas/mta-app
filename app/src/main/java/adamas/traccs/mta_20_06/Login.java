@@ -269,7 +269,7 @@ public class Login extends AppCompatActivity  implements NetworkStateReceiver.Ne
 
     final String PREFS_NAME = "MTAPrefs";
 
-    static String App_Web_ServiceVersionNo = "26.07.001";
+    static String App_Web_ServiceVersionNo = "26.07.003";
     static String Server_Web_ServiceVersionNo = "";
     //private HttpClient httpsClient;
     int total_allowed_connections = -1;
