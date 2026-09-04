@@ -1723,6 +1723,7 @@ public class Login extends AppCompatActivity  implements NetworkStateReceiver.Ne
         if (isOnline(Login.this)) {
 
             try {
+                URL4 = root + "/TimeSheet.asmx?op=Login_User";
                 new MyAsyncClass_login().execute(user, password, "");
                 // new MyAsyncClass_login().execute(usr.getText().toString(),pass.getText().toString(),"");
                 // login_user();
